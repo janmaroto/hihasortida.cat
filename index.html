@@ -61,12 +61,12 @@
   </header>
 
   <!-- Add a background color and large text to the whole page -->
-  <div class="w3-sand w3-grayscale w3-large">
+  <div class="w3-black w3-grayscale w3-large">
 
     <!-- About Container -->
     <div class="w3-container" id="inici">
-      <div class="w3-content" style="max-width:700px">
-        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Inici</span></h5>
+      <div class="w3-content">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">INICI</span></h5>
         <p><strong>L’excessiva atracció al sexe</strong>, o l’adicció al sexe, és un tema <strong>poc tractat</strong>
           en aquesta societat.</p>
         <p>Pot afectar més o menys, però és més comú del que pensem i afecta tant a homes com a dones però,
@@ -107,7 +107,7 @@
     <!-- About Container -->
     <div class="w3-container" id="qui-som">
       <div class="w3-content" style="max-width:700px">
-        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Qui Som?</span></h5>
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">QUI SOM?</span></h5>
         <p>hihasortida.cat neix a partir d’una iniciativa particular que dona resposta i solució a un problema real de
           la nostra societat. Ràpidament obté interès entre alguns afectats i acaba generant un grup de treball a partir
           del qual es crea aquesta web i taller de superació.</p>
@@ -266,6 +266,23 @@
   </footer>
 
   <script>
+    // Read More
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
     // Accordion
     function myFunction(id) {
       var x = document.getElementById(id);
