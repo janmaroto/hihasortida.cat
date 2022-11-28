@@ -105,7 +105,7 @@
     </div>
 
     <!-- About Container -->
-    <div class="w3-container" id="about">
+    <div class="w3-container" id="qui-som">
       <div class="w3-content" style="max-width:700px">
         <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Qui Som?</span></h5>
         <p>hihasortida.cat neix a partir d’una iniciativa particular que dona resposta i solució a un problema real de
@@ -115,6 +115,13 @@
           definitiva i permanent anys de lluita amb l'excessiva atracció al sexe.</p>
         <p>Ara ajudem des de la pròpia experiència personal a tothom qui ho vulgui, per tal a que també ells ho puguin
           aconseguir.</p>
+
+        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align">
+          Open Section 1</button>
+
+        <div id="Demo1" class="w3-container w3-hide">
+          <p>Some text..</p>
+        </div>
 
         <p><strong>Els nostres valors són:</strong></p>
         <h4>La Confidencialitat</h4>
@@ -137,16 +144,27 @@
           avançant.</p>
 
         <h4>LA GRATUÏTAT</h4>
-        <p>El millor a la vida és gratuit. Nosaltres estem molt agraïts d’haver pogut deixar tot allò enrere. Coneixem de primera mà tot el que comporta viure amb una excessiva atracció al sexe i desitjem que altres també puguin passar pàgina. Nosaltres vam ser ajudats gratuïtament, de franc també ho donem ara.</p>
+        <p>El millor a la vida és gratuit. Nosaltres estem molt agraïts d’haver pogut deixar tot allò enrere. Coneixem
+          de primera mà tot el que comporta viure amb una excessiva atracció al sexe i desitjem que altres també puguin
+          passar pàgina. Nosaltres vam ser ajudats gratuïtament, de franc també ho donem ara.</p>
 
         <h4>La Proximitat</h4>
-        <p>Cada cop més ens habituem a l’us de les noves tecnologies que certament faciliten el contacte entre les perosnes. Sabem també però que no és el mateix parlar via un aparell electrònic que quedar presencialment amb algú. En la nostra experència és necessari poder trobar aquest espai proper on reunir-nos per parlar i tractar els temes i necessitats puntuals de cadascú. Actualment ens trobem per la zona de Barcelona i voltants. Si no t’és possible venir contacta’ns igualment perque prenguem nota i si es genera un grup de treball per la teva zona t’ho farem saber.</p>
+        <p>Cada cop més ens habituem a l’us de les noves tecnologies que certament faciliten el contacte entre les
+          perosnes. Sabem també però que no és el mateix parlar via un aparell electrònic que quedar presencialment amb
+          algú. En la nostra experència és necessari poder trobar aquest espai proper on reunir-nos per parlar i tractar
+          els temes i necessitats puntuals de cadascú. Actualment ens trobem per la zona de Barcelona i voltants. Si no
+          t’és possible venir contacta’ns igualment perque prenguem nota i si es genera un grup de treball per la teva
+          zona t’ho farem saber.</p>
 
         <p><strong>La nostra visió:</strong></p>
-        <p>Ajudar tothom qui vulgui superar l’excessiva atracció al sexe a través de la mentoria amb persones que ja han passat i superat el problema personalment, podent-ho acreditar amb resultats.*</p>
-        <small>Aquests resultats han d’estar reconeguts pel grup de treball, és a dir, ha d’estar consensuada la sinceritat del testimoni que expliquen, provada a través del testimoni d’altres persones properes a l’ex-afectat (la parella, amics, etc).</small>
+        <p>Ajudar tothom qui vulgui superar l’excessiva atracció al sexe a través de la mentoria amb persones que ja han
+          passat i superat el problema personalment, podent-ho acreditar amb resultats.*</p>
+        <small>Aquests resultats han d’estar reconeguts pel grup de treball, és a dir, ha d’estar consensuada la
+          sinceritat del testimoni que expliquen, provada a través del testimoni d’altres persones properes a
+          l’ex-afectat (la parella, amics, etc).</small>
         <p><strong>La nostra missió</strong></p>
-        <p>Crear “una fabrica d’ex-afectats” per tal que aquests, si volen, puguin també ajudar a altres que, a la vegada, puguin ajudar a altres.</p>
+        <p>Crear “una fabrica d’ex-afectats” per tal que aquests, si volen, puguin també ajudar a altres que, a la
+          vegada, puguin ajudar a altres.</p>
 
         <div class="w3-panel w3-leftbar w3-light-grey">
           <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new
@@ -243,22 +261,25 @@
   </footer>
 
   <script>
+    // Accordion
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
     // Tabbed Menu
     function openMenu(evt, menuName) {
       var i, x, tablinks;
       x = document.getElementsByClassName("menu");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-      }
-      document.getElementById(menuName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
-    }
-    document.getElementById("myLink").click();
-  </script>
+      for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); }
+      document.getElementById(menuName).style.display = "block"; evt.currentTarget.firstElementChild.className
+        += " w3-dark-grey";
+    } document.getElementById("myLink").click(); </script>
 
 </body>
 
