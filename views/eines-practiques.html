@@ -45,8 +45,8 @@
         <a href="#eines-practiques" class="w3-button w3-block w3-black">EINES PRÀCTIQUES</a>
       </div>
       <div class="w3-col s3">
-        <a href="http://hihasortida.cat/" class="w3-button w3-block w3-black">hiha<span class="w3-text-purple">sortida</span>.cat <span
-            class="w3-text-purple">DONES</span></a>
+        <a href="http://hihasortida.cat/" class="w3-button w3-block w3-black">hiha<span
+            class="w3-text-purple">sortida</span>.cat <span class="w3-text-purple">DONES</span></a>
       </div>
       <div class="w3-col s3">
         <a href="http://hihasortida.cat/#contacta" class="w3-button w3-block w3-black">CONTACTA'NS</a>
@@ -80,48 +80,66 @@
       </div>
     </div>
 
-  <!-- Footer -->
-  <footer class="w3-center w3-light-grey w3-padding-24 w3-large">
-    <p>hi ha <span class="w3-text-blue"><strong>sortida</strong></span></p>
-  </footer>
+    <!-- CONTACTA -->
+    <div class="w3-container w3-border-top" id="contacta">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACTA'NS</span></h5>
+        <p>Assistir al taller de superació és senzill, però volem descartar curiosos i persones no afectades. Per això
+          et demanem que emplenis aquest formulari ràpid i un noi ex-afectat es posarà en contacte amb tu via telefònica
+          tant aviat com sigui possible.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nom" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="tel" placeholder="Telèfon" required name="People">
+          </p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text"
+              placeholder="Explica'ns una mica de la teva situació (opcional)" name="Message"></p>
+          <p><button class="w3-button w3-black" type="submit">ENVIAR</button></p>
+        </form>
+      </div>
+    </div>
 
-  <script>
-    // Read More
-    function myFunction() {
-      var dots = document.getElementById("dots");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-24 w3-large">
+      <p>hiha<span class="w3-text-blue"><strong>sortida</strong></span>.cat</p>
+    </footer>
 
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
+    <script>
+      // Read More
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
       }
-    }
 
-    // Accordion
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
+      // Accordion
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
       }
-    }
 
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("menu");
-      for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); }
-      document.getElementById(menuName).style.display = "block"; evt.currentTarget.firstElementChild.className
-        += " w3-dark-grey";
-    } document.getElementById("myLink").click(); </script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); }
+        document.getElementById(menuName).style.display = "block"; evt.currentTarget.firstElementChild.className
+          += " w3-dark-grey";
+      } document.getElementById("myLink").click(); </script>
 
 </body>
 
