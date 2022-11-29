@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hi Ha Sortida</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="views/css/w3.css">
+  <link rel="stylesheet" href="Inconsolata/">
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("views/img/stars-milky-way-sky-night-dark-man-1634418-pxhere.com.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="http://hihasortida.cat/#inici" class="w3-button w3-block w3-black">INICI</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="http://hihasortida.cat/#qui-som" class="w3-button w3-block w3-black">QUI SOM?</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="http://hihasortida.cat/#es-per-mi" class="w3-button w3-block w3-black">ÉS PER MI?</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#eines-practiques" class="w3-button w3-block w3-black">EINES PRÀCTIQUES</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="http://hihasortida.cat/" class="w3-button w3-block w3-black">hiha<span class="w3-text-purple">sortida</span>.cat <span
+            class="w3-text-purple">DONES</span></a>
+      </div>
+      <div class="w3-col s3">
+        <a href="http://hihasortida.cat/#contacta" class="w3-button w3-block w3-black">CONTACTA'NS</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Open from 6am to 5pm</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">Hi Ha<br><span style="font-weight: bold;">Sortida</span></span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">15 Adr street, 5015</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale w3-large">
+    <!-- EINES PRÀCTIQUES -->
+    <div class="w3-container" id="eines-practiques">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">EINES PRÀCTIQUES</span></h5>
+        <p>Aquestes són algunes de les recomenacions que et podem donar (sempre que puguis i tinguis suficient voluntat
+          per aplicar-les; valora-ho). Observa el teu nivell de frustració, si veus que te’n genera massa et recomanem
+          assistir al curs:</p>
+        <p><strong>1. Treu tot el que destorba</strong> (o et fa caure): Desinstal.lar del telèfon certes aplicacions o
+          instal.lar alguna aplicació restringir amb una applicació si t’es possible (te’ns suficient força de
+          voluntat).</p>
+        <p><strong>2. Comparteix</strong> el que et passa amb algú: Posar el que et succeix a la llum no és fàcil, però
+          quan ho fem d’alguna manera treiem força al domini que exerceix en nosaltres. Ja no està en el secret, s’ha
+          desvel.lat i el poder d’influència ja no és tant intens. Coratge!</p>
+        <p><strong>3. Busca:</strong> Qui busca troba. Això és així, tardarem més o tardarem menys, però si hi posem el
+          nostre cor, voluntat i pensament al final obtindrem resposta. Agafa un compromís real de buscar quina és la
+          sortida al problema. Nosaltres et podem ajudar.</p>
+        <p><strong>4. Demana:</strong>Una de les eines que explorem al curs perquè sabem que dóna resultat és la
+          pregària. Pregar vol dir parlar amb Déu, relacionar-s'hi de manera senzilla i sincera.
+          Si creus que pots parlar a Déu directament pregunta-li com resoldre el que et passa, com superar-ho,
+          entrega-li la teva lluita per tal que les circumstàncies siguin propícies. Si no ets creient t’animem a
+          provar-ho. Al curs ampliem el perquè de tot això.</p>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <p><a href="#inici" title="hihasortida.cat" class="w3-hover-dark-blue">hihasortida.cat</a></p>
+  </footer>
+
+  <script>
+    // Read More
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+    // Accordion
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); }
+      document.getElementById(menuName).style.display = "block"; evt.currentTarget.firstElementChild.className
+        += " w3-dark-grey";
+    } document.getElementById("myLink").click(); </script>
+
+</body>
+
+</html>
