@@ -7,7 +7,7 @@ body,
     .bgimg {
       background-position: center;
       background-size: cover;
-      background-image: url("views/img/barcelona-2.jpg");
+      background-image: url("views/img/barcelona-1.jpg");
       min-height: 75%;
     }
 
