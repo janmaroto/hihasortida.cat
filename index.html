@@ -9,14 +9,31 @@
   <link rel="stylesheet" href="views/css/styles.css">
   <link rel="stylesheet" href="Inconsolata/">
 </head>
+<style>
+  body {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("views/img/barcelona-1.jpg");
+    min-height: 75%;
+}
+
+.menu {
+    display: none;
+}
+</style>
 
 <body>
 
   <!-- Navigation -->
   <div class="w3-top">
-    <div class="w3-row w3-padding w3-black">
+    <div class="w3-row w3-padding w3-white">
       <div class="w3-col s3">
-        <a href="#inici" class="w3-button w3-block w3-black">INICI</a>
+        <a href="#inici" class="w3-button w3-bar-item w3-black">INICI</a>
       </div>
       <div class="w3-col s3">
         <a href="#qui-som" class="w3-button w3-block w3-black">QUI SOM?</a>
@@ -37,6 +54,7 @@
       </div>
     </div>
   </div>
+  <!--/ Navigation -->
 
   <!-- Header with image -->
   <header class="bgimg w3-display-container w3-grayscale-min" id="home">
@@ -54,8 +72,6 @@
 
   <!-- Add a background color and large text to the whole page -->
   <div class="w3-white w3-grayscale w3-padding-32 w3-large">
-
-    <img src="views/img/barcelona-1.jpg" alt="holahola">
 
     <!-- INICI -->
     <div class="w3-container" id="inici">

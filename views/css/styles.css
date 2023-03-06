@@ -1,16 +1,15 @@
-body,
-    html {
-      height: 100%;
-      font-family: "Inconsolata", sans-serif;
-    }
+body {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
 
-    .bgimg {
-      background-position: center;
-      background-size: cover;
-      background-image: url("views/img/barcelona-1.jpg");
-      min-height: 75%;
-    }
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/barcelona-1.jpg");
+    min-height: 75%;
+}
 
-    .menu {
-      display: none;
-    }
+.menu {
+    display: none;
+}
