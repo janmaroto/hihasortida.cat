@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<!-- META -->
+
+<head>
+    <title>Hi Ha Sortida | qui som</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="Inconsolata/">
+</head>
+<!-- META -->
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="w3-bar w3-black">
+        <a href="../index.html" class="w3-bar-item w3-button ">INICI</a>
+        <a href="qui-som.html" class="w3-bar-item w3-button">QUI SOM</a>
+        <a href="es-per-mi.html" class="w3-bar-item w3-button">ES PER MI?</a>
+        <a href="el-taller.html" class="w3-bar-item w3-button">EL TALLER</a>
+        <a href="eines-practiques.html" class="w3-bar-item w3-button">EINES PRACTIQUES</a>
+        <a href="dones.html" class="w3-bar-item w3-button"><small>hiha<span
+                    class="w3-text-purple">sortida</span>.cat</small> <span class="w3-text-purple">DONES</span></a>
+        <a href="contacta.html" class="w3-bar-item w3-button">CONTACTA'NS</a>
+    </div>
+    <!--/ NAVIGATION -->
+
+    <!-- HEADER -->
+
+    <!--/ HEADER -->
+
+    <!-- CONTENT -->
+    <div class="page w3-white w3-padding-32 w3-large">
+        <div class="w3-container" id="inici">
+            <div class="w3-content" style="max-width:700px">
+                <p><strong>El taller </strong>va de trobar una sortida<strong> real, tangible i
+                        permanent.</strong>&nbsp;</p>
+                <p>Sabem que nom&eacute;s &eacute;s possible canviar si <strong>canviem internament</strong> primer. No
+                    tractant els s&iacute;mptomes del problema, sin&oacute; <strong>arribant a l'arrel</strong> i
+                    treballant-ho des d'all&agrave; de manera profunda, <strong>sense generar
+                        frustraci&oacute;.</strong></p>
+                <p>El nostre enfocament est&agrave; en l'aplicaci&oacute; d&rsquo;<strong>eines
+                        pr&agrave;ctiques</strong> (plantejaments de vida, consells pr&agrave;ctics, din&agrave;miques
+                    personals i de grup&hellip;) amb les que explorem totes les <strong>lluites internes</strong> de la
+                    persona.</p>
+                <p>Tot est&agrave; fonamentat a partir de <strong>principis b&iacute;blics pr&agrave;ctics</strong>,
+                    impartits per homes que ja els han aplicat i han obtingut <strong>resultats permanentment</strong>,
+                    podent aix&iacute; <strong>ajudar altres a fer el mateix.</strong></p>
+                <p><br /><br /></p>
+                <p><strong>EN QU&Egrave; CONSISTEIXEN AQUESTS PRINCIPIS?</strong></p>
+                <p>S'ha dit molt sobre el que hi ha escrit a la B&iacute;blia o <strong>el que Jes&uacute;s va
+                        ensenyar</strong>. De fet, s'ha dit tant que sovint resulta <strong>conf&oacute;s</strong> saber
+                    realment quin &eacute;s el seu missatge... El que molta gent no sap &eacute;s que el seu missatge
+                    t&eacute; <strong>una aplicaci&oacute; pr&agrave;ctica</strong> <strong>i decisiva</strong>
+                    <strong>en les nostres vides.</strong></p>
+                <p><strong>Tant si ets creient com si no</strong>, l&rsquo;objectiu inicial del taller &eacute;s el
+                    mateix: <strong>con&egrave;ixer veritablement en qu&egrave; consisteix</strong> <strong>aquest
+                        missatge</strong> que promet fer-nos sortir del problema.</p>
+                <p>Perqu&egrave;, <strong>o b&eacute; el desconeixem, o b&eacute; ens pensem que el coneixem,
+                        per&ograve; en realitat alguna cosa falla, ja que no ens dona resultats</strong>.</p>
+                <p>Ha de donar resultats: Jes&uacute;s va dir que &ldquo;<strong>Pels seus fruits</strong> [pels seus
+                    resultats] <strong>els coneixereu</strong>.&rdquo;*</p>
+                <p>Aix&iacute; doncs, aquest &eacute;s el<strong> PRIMER PAS: donar-se un espai</strong> on poder
+                    <strong>esclarir conceptes, idees err&ograve;nies i dubtes</strong>, perqu&egrave; aix&iacute; pugui
+                    <strong>transcendir</strong> en la nostra vida.&nbsp;</p>
+                <p>*Mateu 7:16</p>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="w3-center w3-light-grey w3-padding-24 w3-large">
+        <p>hiha<span class="w3-text-blue"><strong>sortida</strong></span>.cat</p>
+    </footer>
+    <!-- FOOTER -->
+
+    <script>
+        // Read More
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        // Accordion
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) { tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", ""); }
+            document.getElementById(menuName).style.display = "w3-bar-item"; evt.currentTarget.firstElementChild.className
+                += " w3-dark-grey";
+        } document.getElementById("myLink").click(); 
+    </script>
+
+</body>
+
+</html>
